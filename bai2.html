@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let input = prompt('Nhap chuoi so zo day: ');
+    let chuoi = input.toString();
+    let arr=[chuoi[0]];
+    for (let i = 1; i < chuoi.length; i++) {
+        if (chuoi[i-1] % 2 == 0 && chuoi[i]%2 == 0) {
+            arr.push('-', chuoi[i]);
+        } else {
+            arr.push(chuoi[i]);        }
+    }
+    document.write(arr.join(''));
+</script>
+</body>
+</html>
